@@ -1,0 +1,25 @@
+# Introduction to Machine Learning
+
+Machine learning is a branch of artificial intelligence that enables systems to learn from data without being explicitly programmed.
+
+## Types of Learning
+
+### Supervised Learning
+In supervised learning, the model is trained on labeled data. The algorithm learns the mapping from inputs to outputs.
+
+Examples include:
+- Linear regression
+- Decision trees
+- Neural networks
+
+### Unsupervised Learning
+Unsupervised learning discovers hidden patterns in unlabeled data.
+
+Examples include:
+- K-means clustering
+- Principal Component Analysis (PCA)
+- Autoencoders
+
+## Applications
+
+Machine learning powers recommendation systems, image recognition, natural language processing, and autonomous vehicles.
