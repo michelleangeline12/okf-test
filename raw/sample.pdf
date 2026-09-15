@@ -1,74 +1,22 @@
 %PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document (opensource)
-1 0 obj
-<<
-/F1 2 0 R /F2 3 0 R
->>
-endobj
-2 0 obj
-<<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
->>
-endobj
-3 0 obj
-<<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
->>
-endobj
-4 0 obj
-<<
-/Contents 8 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 7 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
->>
-endobj
-5 0 obj
-<<
-/PageMode /UseNone /Pages 7 0 R /Type /Catalog
->>
-endobj
-6 0 obj
-<<
-/Author (\(anonymous\)) /CreationDate (D:20260915221715+07'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260915221715+07'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
->>
-endobj
-7 0 obj
-<<
-/Count 1 /Kids [ 4 0 R ] /Type /Pages
->>
-endobj
-8 0 obj
-<<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 441
->>
+1 0 obj<</Type/Catalog/Pages 2 0 R>>endobj
+2 0 obj<</Type/Pages/Kids[3 0 R]/Count 1>>endobj
+3 0 obj<</Type/Page/MediaBox[0 0 612 792]/Parent 2 0 R/Contents 4 0 R/Resources<</Font<</F1 5 0 R>>>>>>endobj
+4 0 obj<</Length 120>>
 stream
-Gat=e_+qm%&4H!_ME)F^V61.77mJ1?.O:hf^c'jmDA,+a%TW=NentkI6P7C;er%-shDYcT=XnjC%_+*0nXuPP-rs0NnI3A<pI4eEWPcu+NqlA.oDCY9%QToP"'9-`X$5X@YnO)c<$%m5djR&!1r7j[."er4_;^jf8$/#[[;P$N:omNa8&H-GhbDYiVX!(h"&.,CHe04(]oUkD5^O&)43\gi"_qi=FD*^rcqj^r^g/%0I%fTKejdD1##hdBGM:R;Z_]X5DfkHA%I!TXOlm9%.gdP2c44tA?G3Zkqh'9o4'fih@nXF5S"V'ZV'FBn4Za#;a/<TUjaW+pQ=/b[`Y7f[B2-K'i(8^IJ+J]"$65/f1u4>-/qoo-IZ+HtfQm6WjX(%8=kB?VmZ6VRSK`ZATW)**?@ph8XrF?YqMXuD"GCPdFir\k/n?'tj31'~>endstream
+BT /F1 12 Tf 72 720 Td (Introduction to AI Systems) Tj 0 -20 Td (AI systems process data to make intelligent decisions.) Tj 0 -20 Td (Key areas: NLP, Computer Vision, Reinforcement Learning.) Tj ET
+endstream
 endobj
+5 0 obj<</Type/Font/Subtype/Type1/BaseFont/Helvetica>>endobj
 xref
-0 9
+0 6
 0000000000 65535 f 
-0000000061 00000 n 
-0000000102 00000 n 
-0000000209 00000 n 
-0000000321 00000 n 
-0000000524 00000 n 
-0000000592 00000 n 
-0000000872 00000 n 
-0000000931 00000 n 
-trailer
-<<
-/ID 
-[<d75b28580a37d81c3877dd7026d8fac3><d75b28580a37d81c3877dd7026d8fac3>]
-% ReportLab generated PDF document -- digest (opensource)
-
-/Info 6 0 R
-/Root 5 0 R
-/Size 9
->>
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000266 00000 n 
+0000000438 00000 n 
+trailer<</Size 6/Root 1 0 R>>
 startxref
-1462
+508
 %%EOF
