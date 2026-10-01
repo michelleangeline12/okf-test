@@ -1,5 +1,10 @@
 # Log
 
+## 2026-10-01
+
+-   **Update**: Federated LightRAG Overview
+-   **Update**: LightRAG Fundamentals
+
 ## 2026-09-23
 
 -   **Creation**: Federated LightRAG Overview

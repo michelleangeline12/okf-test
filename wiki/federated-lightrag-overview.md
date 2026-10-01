@@ -6,8 +6,8 @@ description: >-
   data sources into per-workspace knowledge graphs with fine-grained access
   control.
 generated:
-  by: Pin Test Agent/1
-  at: '2026-09-23T16:43:41.585Z'
+  by: OKF Wiki Author/1
+  at: '2026-10-01T06:38:53.067Z'
 ---
 # Federated LightRAG Overview
 
@@ -32,8 +32,6 @@ A platform that lets organizations connect multiple heterogeneous data sources, 
 ## Where to go next
 
 - The five gaps in vanilla LightRAG and how they are closed: [LightRAG Gaps and Solutions](lightrag-gaps-and-solutions.md)
+- Side-by-side feature comparison: [LightRAG vs Federated LightRAG](lightrag-vs-federated-lightrag.md)
 - The layered design: [Federated LightRAG System Layers](federated-lightrag-system-layers.md)
-- Feature-by-feature comparison: [LightRAG vs Federated LightRAG](lightrag-vs-federated-lightrag.md)
-- Delivery plan: [Federated LightRAG Implementation Phases](federated-lightrag-implementation-phases.md)
-
-This plan is one of the knowledge sources processed by the [OKF Knowledge Pipeline](okf-knowledge-pipeline.md).
+- The two runtime paths: [Data Ingestion Flow](data-ingestion-flow.md) and [ACL-Aware Query Flow](acl-aware-query-flow.md)
