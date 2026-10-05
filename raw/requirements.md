@@ -15,11 +15,7 @@ This document outlines the key requirements for the OKF knowledge pipeline.
 
 # Functional Requirements
 
-1\. The system shall convert PDF files to Markdown format.
-
-2\. The system shall extract text from DOCX files.
-
-3\. All converted files shall include YAML frontmatter.
+1\. All converted files shall include YAML frontmatter.
 
 # Non-Functional Requirements
 
