@@ -7,7 +7,7 @@ description: >-
   fine-grained role-based access control.
 generated:
   by: OKF Wiki Author/1
-  at: '2026-10-19T13:37:53.588Z'
+  at: '2026-10-19T14:22:06.507Z'
 ---
 ## Summary
 
@@ -25,7 +25,7 @@ generated:
 
 ## The building blocks
 
-1. A **connector layer** that turns databases, APIs, cloud storage and files into streamable content — [Base Connector Interface](base-connector-interface.md) and [Schema Extraction Per Connector](schema-extraction-per-connector.md).
+1. A **connector layer** that turns databases, APIs, cloud storage and files into streamable content — [Base Connector Interface](base-connector-interface.md), [Schema Extraction Per Connector](schema-extraction-per-connector.md).
 2. A **modified LightRAG core** adding source provenance, ACL-aware retrieval and CDC-driven incremental updates — [Modified LightRAG Core](modified-lightrag-core.md), [Knowledge Graph with Provenance](knowledge-graph-with-provenance.md).
 3. A **CDC / sync service** so the graph never goes stale — [CDC and Real-Time Sync Architecture](cdc-and-real-time-sync-architecture.md).
 4. An **access control service** and **workspace manager** that turn LightRAG's bare workspace namespace into a governed, multi-team entity — [Access Control Model](access-control-model.md), [Workspace Manager Service](workspace-manager-service.md).
@@ -33,7 +33,7 @@ generated:
 
 ## Extend, not replace
 
-LightRAG's retrieval quality is proven, so the plan extends it rather than rebuilding it. The baseline in [How LightRAG Works Today](../reference/how-lightrag-works-today.md) is preserved — including the 1200-token default chunk size, which stays configurable per workspace with **no regression**. The five gaps that motivate the extension are catalogued in [What LightRAG Lacks: Gaps and Solutions](../reference/what-lightrag-lacks-gaps-and-solutions.md), the before/after comparison in [LightRAG vs Federated LightRAG](lightrag-vs-federated-lightrag.md), and delivery in [Implementation Phases](implementation-phases.md).
+LightRAG's retrieval quality is proven, so the plan extends it rather than rebuilding it. The baseline in [How LightRAG Works Today](../reference/how-lightrag-works-today.md) is preserved — including the 1200-token default chunk size, which stays configurable per workspace with **no regression**. The five gaps that motivate the extension are catalogued in [What LightRAG Lacks: Gaps and Solutions](../reference/what-lightrag-lacks-gaps-and-solutions.md), the layer-by-layer answer in [Federated LightRAG System Layers](federated-lightrag-system-layers.md), the before/after comparison in [LightRAG vs Federated LightRAG](lightrag-vs-federated-lightrag.md), and delivery in [Implementation Phases](implementation-phases.md).
 
 ## References cited in the plan
 

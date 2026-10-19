@@ -3,6 +3,7 @@
 ## 2026-10-19
 
 -   **Update**: Federated LightRAG Architecture Overview
+-   **Update**: Federated LightRAG Architecture Overview
 -   **Update**: How LightRAG Works Today
 -   **Creation**: What LightRAG Lacks: Gaps and Solutions
 
