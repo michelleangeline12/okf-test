@@ -1,5 +1,11 @@
 # Log
 
+## 2026-10-19
+
+-   **Update**: Federated LightRAG Architecture Overview
+-   **Update**: How LightRAG Works Today
+-   **Creation**: What LightRAG Lacks: Gaps and Solutions
+
 ## 2026-10-09
 
 -   **Creation**: OKF Test Knowledge Source

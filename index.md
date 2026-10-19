@@ -7,7 +7,7 @@ okf_version: '0.2'
 
 [Browse all Concept pages →](wiki/concept/index.md)
 
--   [Federated LightRAG Architecture Overview](wiki/concept/federated-lightrag-architecture-overview.md) - An enterprise-grade RAG platform built on LightRAG that unifies heterogeneous data sources into one queryable knowledge graph per workspace, governed by fine-grained role-based access control.
+-   [Federated LightRAG Architecture Overview](wiki/concept/federated-lightrag-architecture-overview.md) - An enterprise-grade RAG platform built on LightRAG that unifies heterogeneous data sources into one governed knowledge graph per workspace, with fine-grained role-based access control.
 -   [Federated LightRAG Overview](wiki/concept/federated-lightrag-overview.md) - An enterprise-grade RAG platform built on LightRAG that unifies heterogeneous data sources into one governed knowledge graph per workspace.
 
 ## Guide
@@ -22,3 +22,4 @@ okf_version: '0.2'
 [Browse all Reference pages →](wiki/reference/index.md)
 
 -   [How LightRAG Works Today](wiki/reference/how-lightrag-works-today.md) - Baseline LightRAG behaviour — chunking, entity extraction, dual-level retrieval, pluggable storage, workspace isolation and incremental updates — that the federated platform extends.
+-   [What LightRAG Lacks: Gaps and Solutions](wiki/reference/what-lightrag-lacks-gaps-and-solutions.md) - The five enterprise gaps in vanilla LightRAG — file-only ingestion, no access control, no schema awareness, no real-time sync, no workspace management — and the layer that answers each.

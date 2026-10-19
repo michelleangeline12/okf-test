@@ -7,11 +7,11 @@ description: >-
   that the federated platform extends.
 generated:
   by: OKF Wiki Author/1
-  at: '2026-10-09T01:52:12.643Z'
+  at: '2026-10-19T13:37:53.588Z'
 ---
 ## Summary
 
-LightRAG is a graph-enhanced RAG framework (arXiv:2410.05779, EMNLP 2025). Understanding its current behaviour matters because the federated platform **extends it, not replaces it** — see [Federated LightRAG Architecture Overview](../concept/federated-lightrag-architecture-overview.md).
+LightRAG is a graph-enhanced RAG framework (arXiv:2410.05779, EMNLP 2025). Its current behaviour matters because the federated platform **extends it rather than replacing it** — see [Federated LightRAG Architecture Overview](../concept/federated-lightrag-architecture-overview.md).
 
 ## Core pipeline
 
@@ -37,4 +37,31 @@ Actual graph node properties:
 
 ## Dual-level retrieval
 
-Simple vector search finds isolated facts; graph traversal finds relationships. Both
+Simple vector search finds isolated facts; graph traversal finds relationships. Both together give comprehensive answers.
+
+| Level | What it retrieves | How | Best for |
+| --- | --- | --- | --- |
+| Low-level (local) | Specific entities + their direct relationships | Vector search on entity embeddings + 1–2 hop graph traversal | "Who is the CEO of Tesla?" |
+| High-level (global) | Communities, themes, topics | Community detection on the KG, subgraph retrieval | "How does EV adoption affect urban infrastructure?" |
+| Mix (default) | Both levels combined | Both + cross-encoder reranking | General-purpose queries |
+
+Six query modes are supported: `naive`, `local`, `global`, `hybrid`, `mix`, `bypass` (default: `mix`).
+
+## Pluggable storage
+
+Four storage layers, each pluggable:
+
+| Layer | Purpose | Available backends |
+| --- | --- | --- |
+| KV Store | LLM response cache, config | JSON, PostgreSQL, Redis, MongoDB, OpenSearch |
+| Vector Store | Entity/relation embeddings | NanoVectorDB, PostgreSQL (pgvector), Milvus, FAISS, Qdrant, MongoDB, OpenSearch |
+| Graph Store | Knowledge graph nodes/edges | NetworkX (in-memory), Neo4j, PostgreSQL, MongoDB, Memgraph, OpenSearch |
+| Doc Status Store | Document processing status | JSON, PostgreSQL, Redis, MongoDB, OpenSearch |
+
+`ChromaVectorDBStorage` exists but is commented out; Apache AGE is also available for PostgreSQL graph storage.
+
+## Workspace isolation and incremental updates
+
+LightRAG natively supports workspace isolation via a `workspace` field (default from the `WORKSPACE` env var); every backend uses it as a namespace/prefix, so workspaces coexist on the same backend without leakage. The federated platform extends this native concept with RBAC and federated sources — see [Workspace Manager Service](workspace-manager-service.md).
+
+Incremental updates are **O(n)** versus an O(N) full rebuild: new entities are matched by normalized name against the existing graph, merged if found, or created as new nodes. This is what makes real-time CDC ingestion feasible — see [CDC and Real-Time Sync Architecture](cdc-and-real-time-sync-architecture.md).
