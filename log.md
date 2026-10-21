@@ -1,5 +1,18 @@
 # Log
 
+## 2026-10-21
+
+-   **Update**: Federated LightRAG Architecture Overview
+-   **Update**: How LightRAG Works Today
+-   **Creation**: Federated LightRAG System Layers
+-   **Update**: What LightRAG Lacks: Gaps and Solutions
+-   **Creation**: Base Connector Interface
+-   **Creation**: Schema Extraction Per Connector
+-   **Creation**: Modified LightRAG Core
+-   **Creation**: Knowledge Graph with Provenance
+-   **Creation**: CDC and Real-Time Sync Architecture
+-   **Creation**: Access Control Model
+
 ## 2026-10-19
 
 -   **Update**: Federated LightRAG Architecture Overview

@@ -1,4 +1,10 @@
 # Reference
 
+-   [Access Control Model](access-control-model.md) - Multi-layer RBAC — workspace roles plus per-source and per-document-type access levels — with enforcement at query time, indexing time and the storage layer.
+-   [Base Connector Interface](base-connector-interface.md) - The abstract BaseConnector contract — connect, test, extract schema, stream content, list resources, detect and listen for changes — that every data source connector implements.
+-   [CDC and Real-Time Sync Architecture](cdc-and-real-time-sync-architecture.md) - The change-data-capture pipeline — Debezium, MongoDB Change Streams and file watchers feeding a Redis Streams event bus — that keeps the knowledge graph current without re-ingestion.
+-   [Federated LightRAG System Layers](federated-lightrag-system-layers.md) - The nine layers of the federated platform — frontend, API gateway, access control, workspace manager, connectors, schema extraction, CDC, modified LightRAG core and storage — with the reason each exists.
 -   [How LightRAG Works Today](how-lightrag-works-today.md) - Baseline LightRAG behaviour — chunking, entity extraction, dual-level retrieval, pluggable storage, workspace isolation and incremental updates — that the federated platform extends.
+-   [Modified LightRAG Core](modified-lightrag-core.md) - LightRAG's engine with three additions — source provenance tagging, ACL-aware retrieval and CDC-driven incremental updates — exposed as the FederatedLightRAG class.
+-   [Schema Extraction Per Connector](schema-extraction-per-connector.md) - How each connector pulls an information schema — SQL information_schema joins, MongoDB sampling, OpenAPI and GraphQL introspection, pandas profiling for files — and stores it as KG metadata.
 -   [What LightRAG Lacks: Gaps and Solutions](what-lightrag-lacks-gaps-and-solutions.md) - The five enterprise gaps in vanilla LightRAG — file-only ingestion, no access control, no schema awareness, no real-time sync, no workspace management — and the layer that answers each.

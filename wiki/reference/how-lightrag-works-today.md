@@ -6,8 +6,8 @@ description: >-
   retrieval, pluggable storage, workspace isolation and incremental updates —
   that the federated platform extends.
 generated:
-  by: OKF Wiki Author/1
-  at: '2026-10-19T13:37:53.588Z'
+  by: test-okf-in-deep-agent/1
+  at: '2026-10-21T06:10:36.347Z'
 ---
 ## Summary
 
@@ -62,6 +62,6 @@ Four storage layers, each pluggable:
 
 ## Workspace isolation and incremental updates
 
-LightRAG natively supports workspace isolation via a `workspace` field (default from the `WORKSPACE` env var); every backend uses it as a namespace/prefix, so workspaces coexist on the same backend without leakage. The federated platform extends this native concept with RBAC and federated sources — see [Workspace Manager Service](workspace-manager-service.md).
+LightRAG natively supports workspace isolation via a `workspace` field (default from the `WORKSPACE` env var); every backend uses it as a namespace/prefix, so workspaces coexist on the same backend without leakage. The federated platform extends this native concept with RBAC and federated sources — see Workspace Manager Service.
 
 Incremental updates are **O(n)** versus an O(N) full rebuild: new entities are matched by normalized name against the existing graph, merged if found, or created as new nodes. This is what makes real-time CDC ingestion feasible — see [CDC and Real-Time Sync Architecture](cdc-and-real-time-sync-architecture.md).

@@ -6,8 +6,8 @@ description: >-
   control, no schema awareness, no real-time sync, no workspace management — and
   the layer that answers each.
 generated:
-  by: OKF Wiki Author/1
-  at: '2026-10-19T13:37:53.588Z'
+  by: test-okf-in-deep-agent/1
+  at: '2026-10-21T06:10:36.347Z'
 ---
 ## Summary
 
@@ -21,10 +21,10 @@ The federated platform exists because vanilla LightRAG, for all its retrieval qu
 | No access control | Enterprises require role-based, source-level permissions | **RBAC with source-level filtering** — [Access Control Model](access-control-model.md) |
 | No schema awareness | Users must understand what data exists before querying | **Information Schema Extraction** — [Schema Extraction Per Connector](schema-extraction-per-connector.md) |
 | No real-time sync | Data changes constantly; a stale knowledge graph gives wrong answers | **CDC pipeline (Debezium)** — [CDC and Real-Time Sync Architecture](cdc-and-real-time-sync-architecture.md) |
-| No multi-user workspace management | Teams need isolated workspaces with shared governance | **Workspace Manager** — [Workspace Manager Service](workspace-manager-service.md) |
+| No multi-user workspace management | Teams need isolated workspaces with shared governance | **Workspace Manager** — Workspace Manager Service |
 
 ## Why the gaps compound
 
-Each gap assumes the others away. Connectors without provenance cannot be filtered; access control without provenance has nothing to filter on; CDC without incremental updates would require full rebuilds. The connective tissue is provenance metadata on every entity, relation and chunk — see [Knowledge Graph with Provenance](knowledge-graph-with-provenance.md) — which simultaneously enables query-time ACL filtering, source deletion, audit trails and incremental CDC updates.
+Each gap assumes the others away. Connectors without provenance cannot be filtered; access control without provenance has nothing to filter on; CDC without incremental updates would require full rebuilds. The connective tissue is provenance metadata on every entity, relation and chunk — see [Knowledge Graph with Provenance](../concept/knowledge-graph-with-provenance.md) — which simultaneously enables query-time ACL filtering, source deletion, audit trails and incremental CDC updates.
 
-The net effect of closing all five is summarized in [LightRAG vs Federated LightRAG](lightrag-vs-federated-lightrag.md).
+The net effect of closing all five gaps is summarized in LightRAG vs Federated LightRAG, and the order in which they are closed is in Implementation Phases.
